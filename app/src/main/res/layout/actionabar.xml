@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    tools:targetApi="lollipop"
+    >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="3" >
+
+        <ImageView
+            android:id="@+id/ivHuella"
+            android:layout_columnWeight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            tools:src="@drawable/huella" />
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:text="@string/app_name"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <ImageButton
+            android:id="@+id/ibTopFive"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:layout_columnWeight="1"
+            android:src="@drawable/star_five">
+        </ImageButton>
+
+    </GridLayout>
+
+</Toolbar>
