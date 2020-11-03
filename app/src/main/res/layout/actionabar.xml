@@ -14,14 +14,18 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:columnCount="3" >
+        android:columnCount="4" >
+
+        <ImageView
+            android:id="@+id/flechita"
+            android:src="?attr/actionModeCloseDrawable" />
 
         <ImageView
             android:id="@+id/ivHuella"
             android:layout_columnWeight="1"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            tools:src="@drawable/huella" />
+            android:src="@drawable/huella" />
 
         <TextView
             android:layout_columnWeight="1"
@@ -30,13 +34,14 @@
             android:textSize="25sp"
             android:textStyle="bold|italic" />
 
-        <ImageButton
-            android:id="@+id/ibTopFive"
+        <ImageView
+            android:id="@+id/ivtopFive"
             android:layout_height="40dp"
             android:layout_width="40dp"
             android:layout_columnWeight="1"
-            android:src="@drawable/star_five">
-        </ImageButton>
+            android:src="@drawable/star_five"
+            android:onClick="irAMascotasFavoritas">
+        </ImageView>
 
     </GridLayout>
 
